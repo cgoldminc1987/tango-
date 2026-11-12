@@ -1,0 +1,10 @@
+TANGO DEPLOY ALL - CHECKLIST
+1. Frontend: Open app link in chat, use Share control to share it
+2. Backend: Push backend/ to GitHub, Render New Web Service, set env vars, deploy, test /health
+3. MCP: Copy mcp.json to ~/.cursor/mcp.json, restart Cursor/Claude
+4. Production: Get keys from portal.tangocard.com > Team settings > API credentials
+5. Test: Sandbox first, then small $5 production test, then launch
+Production API: https://api.tangocard.com/raas/v2
+Sandbox API: https://integration-api.tangocard.com/raas/v2
+Docs MCP: https://developers.tangocard.com/mcp
+Sandbox MCP: https://mcp.sandbox.tangocard.com/mcp
