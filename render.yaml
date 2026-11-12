@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tango-backend
+    runtime: docker
+    dockerContext: ./backend
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: TANGO_ENV
+        value: sandbox
+      - key: TANGO_PLATFORM_NAME
+        sync: false
+      - key: TANGO_PLATFORM_KEY
+        sync: false
